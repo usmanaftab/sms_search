@@ -31,11 +31,6 @@
             <artifactId>sms_search_dao</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>sms_search_business</artifactId>
-            <version>${project.version}</version>
-        </dependency>
 
         
 
