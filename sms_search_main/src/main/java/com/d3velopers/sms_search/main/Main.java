@@ -28,6 +28,7 @@ public class Main {
 
         QueryHandler queryHandler = ctx.getBean(QueryHandler.class);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         while (true) {
             try {
                 System.out.print("Enter phone number: ");

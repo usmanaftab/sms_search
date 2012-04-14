@@ -12,7 +12,7 @@
                 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 	
-    <context:component-scan base-package="com.d3velopers.sms_search.business.impl"/>
+    <context:component-scan base-package="com.d3velopers.sms_search.business.service.impl"/>
     
     
     	<!-- Transaction manager for a single Hibernate SessionFactory (alternative 
@@ -23,7 +23,7 @@
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
     
-    <bean id="verticalManager" class="com.d3velopers.business.manager.impl.VerticalManager"/>
-    <bean id="onlineQueryManager" class="com.d3velopers.business.manager.impl.OnlineQueryManager"/>
+    <bean id="verticalManager" class="com.d3velopers.sms_search.business.manager.VerticalManager"/>
+    <bean id="onlineQueryManager" class="com.d3velopers.sms_search.business.manager.OnlineQueryManager"/>
 
 </beans>
